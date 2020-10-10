@@ -1,10 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/llRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp">
 
-    <!-- TODO -->
+    <androidx.appcompat.widget.SwitchCompat
+
+        android:id="@+id/swt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_swt"
+        android:gravity="end"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_editt1_name"/>
+    <EditText
+        android:id="@+id/editt1"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="20">
+        <requestFocus/>
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/maxName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@plurals/main_max_name"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_sirname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_editt2_name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editt2"
+        android:inputType="textPersonName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionDone"
+
+        />
+    <TextView
+        android:id="@+id/maxSurName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@plurals/main_max_surname"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_treatment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/main_treatment"/>
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/iconperson"
+            android:src="@drawable/ic_mr"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/main_iconPerson"
+            />
+        <RadioButton
+            android:id="@+id/senor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_senor"
+            />
+        <RadioButton
+            android:id="@+id/senora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_senora" />
+        <RadioButton
+            android:id="@+id/senorita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_senorita" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/polite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/main_politely"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_button"
+        android:layout_gravity="center"
+        />
+    <ProgressBar
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="10"
+        android:min="0"/>
+    <TextView
+        android:id="@+id/textBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:text="@string/main_text_bar"
+        />
+    <TextView
+        android:id="@+id/textgreet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:text="@string/main_textgreet"/>
+
 
 </LinearLayout>
